@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="home-page" class="container text-center w-50 mt-5 py-3 position-relative bg-transparent">
+        <div class="row">
+            <div class="col-12">
+                <div class="header">
+                    <h1>Smart Login System</h1>
+                </div>
+                <div class="login-inputs">
+                    <div class="email position-relative">
+                        <span><i class="fa-solid fa-envelope text-white fs-5 position-absolute"></i></span>
+                        <input id="emailSignIn" type="email" name="email" required
+                            class="form-control my-3 border-info-subtle bg-transparent" placeholder="Enter Your Email">
+                        <p id="emptyEmailSigninAlert" class="alert alert-danger py-1">email is required</p>
+                        <p id="validEmailSigninAlert" class="alert alert-danger py-1">please enter Email of signup</p>
+                    </div>
+                    <div class="pass position-relative">
+                        <input id="passwordSignIn" type="password" name="pass" required
+                            class="form-control my-3 border-info-subtle bg-transparent"
+                            placeholder="Enter Your password" autocomplete="off">
+                        <p id="emptyPassSigninAlert" class="alert alert-danger py-1">password is required</p>
+                        <p id="ValidPassSigninAlert" class="alert alert-danger py-1">please enter password of signup</p>
+                        <p id="alert"></p>
+                    </div>
+                    <button onclick="login()" type="submit" class="btn btn-outline-info w-100 my-4 fs-5">Login</button>
+                </div>
+                <div class="signup">
+                    <p>Don’t have an account? <a href="html/signup.html">registration (Sign up)</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

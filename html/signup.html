@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div id="home-page" class="container text-center w-50 mt-5 py-3 position-relative bg-transparent">
+        <div class="row">
+            <div class="col-12">
+                <div class="header">
+                    <h1>Smart Login System</h1>
+                    <h2>Sign Up</h2>
+                </div>
+                <div class="login-inputs">
+                    <div class="name">
+                        <input id="nameSignUp" type="text" name="name" required
+                            class="form-control my-3 border-info-subtle bg-transparent" placeholder="Enter Your Name">
+                        <!-- <p id="nameAlert"></p> -->
+                        <p id="validNameAlert" class="alert alert-danger py-1">write valid name with first capital
+                            letter</p>
+                        <p id="emptyNameAlert" class="alert alert-danger py-1">name is required</p>
+                        <!-- <p id="successNameAlert" class="alert alert-success py-1">email is correct</p> -->
+                    </div>
+                    <div class="email position-relative">
+                        <span><i class="fa-solid fa-envelope text-white fs-5 position-absolute"></i></span>
+                        <input id="emailSignUp" type="email" name="email" required
+                            class="form-control my-3 border-info-subtle bg-transparent" placeholder="Enter Your Email"
+                            autocomplete="off">
+                        <!-- <p id="emailAlert"></p> -->
+                        <p id="validEmailAlert" class="alert alert-danger py-1">write valid email like test@example.com
+                        </p>
+                        <p id="emptyEmailAlert" class="alert alert-danger py-1">email is required</p>
+                        <!-- <p id="successEmailAlert" class="alert alert-success py-1">email is correct</p> -->
+                    </div>
+                    <div class="pass position-relative">
+                        <input id="passwordSignUp" type="password" name="pass" required
+                            class="form-control my-3 border-info-subtle bg-transparent"
+                            placeholder="Enter Your Password" autocomplete="off">
+                        <p id="ValidPassAlert" class="alert alert-danger py-1">write Valid password contain at least 8
+                            character that contain one capital letter and one number</p>
+                        <p id="emptyPassAlert" class="alert alert-danger py-1">password is required</p>
+                        <!-- <p id="successPassAlert" class="alert alert-success py-1">email is correct</p> -->
+                        <!-- <p id="passAlert"></p> -->
+                        <p id="alert"></p>
+                    </div>
+                    <button onclick="signup()" type="submit" class="btn btn-outline-info w-100 my-4 fs-5">Sign
+                        Up</button>
+                </div>
+                <div class="signup">
+                    <p>Don’t have an account? <a href="../index.html">Sign in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

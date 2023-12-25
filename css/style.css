@@ -1,0 +1,64 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../image/eLearning\ -\ Activity\ Diagram\ -\ Manage\ Course.jpg);
+    background-position: cover;
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
+}
+
+.navbar {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    backdrop-filter: blur(25px);
+}
+
+#home-page {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+
+#home-page h1,
+h2 {
+    font-size: 40px;
+    color: #17a2b8;
+}
+
+#home-page i {
+    top: 10px;
+    right: 15px;
+}
+
+#home-page input {
+    font-size: 18px;
+    color: white;
+}
+
+#home-page input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#home-page a {
+    text-decoration: none;
+    color: black;
+}
+
+#home-page a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+#validNameAlert,
+#emptyNameAlert,
+#validEmailAlert,
+#emptyEmailAlert,
+#ValidPassAlert,
+#emptyPassAlert,
+#successNameAlert,
+#successEmailAlert,
+#successPassAlert,
+#validEmailSigninAlert,
+#emptyEmailSigninAlert,
+#ValidPassSigninAlert,
+#emptyPassSigninAlert {
+    display: none;
+}
